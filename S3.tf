@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "bucket" {
   acl    = "private"  
   tags = {
     Name        = "My bucket"
-    Environment = "Dev"
+    Environment = "Global"
   }
 lifecycle {
     create_before_destroy = true
@@ -14,8 +14,8 @@ lifecycle {
 resource "aws_s3_bucket_object" "object" {
   bucket = aws_s3_bucket.bucket.id
   key    = "profile"
-  acl    = "private"  # or can be "public-read"
-  source = "/root/production/table.sql"
+  acl    = "private"  
+  source = var.filepath
   etag = filemd5("/root/production/table.sql")
 lifecycle {
     create_before_destroy = true
