@@ -1,6 +1,9 @@
 # Globalscale
+
 1. Database creation 
+
 mysqldb.tf
+
 In this file 4 resources will get created
   a.Database creation
   b.Database security group and rules to allow 3306 port 
