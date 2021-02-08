@@ -1,10 +1,6 @@
 variable "db_instance" {
   default = "db.t2.micro"
 }
-variable "my_db_password" {
-  default = "global123"
-}
-
 variable "vpc_id" {
   default = "vpc-5868a825"
 }
@@ -24,11 +20,14 @@ variable "key_name" {
 }
 variable "ami" {
   description = "AMI Instance ID"
-  default = "ami-047a51fa27710816e" 
+  default = "ami-047a51fa27710816e"
 }
 
 variable "instance_type" {
   description = "Type of instance"
   default = "t2.micro"
+}
+variable "filepath" {
+ default = "/root/modified/table.sql"
 }
 
