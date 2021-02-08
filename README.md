@@ -49,11 +49,14 @@ Steps for encryption of the database password
         zl1GOz3b1QHETg==
         =Gyon
         -----END PGP MESSAGE-----
+	
 2.S3.tf
+
    Bucket resource will get create and file  /root/production/table.sql  will get upload in the bucket
    This file has insert statement to insert data in the database
 
 3.autoscaling.tf
+
     This file have 3 resources
     
     a.launch_configuration
