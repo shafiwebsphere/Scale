@@ -14,11 +14,8 @@ You can turn off this feature to get a quicker startup with -A
 
 Database changed
 MySQL [global]> select * from ec2_launch_data;
-+----+---------------------+---------------+---------------------+
 | id | Instance_id         | Internal_ip   | launch_time         |
-+----+---------------------+---------------+---------------------+
 |  1 | i-0795cb58e4ee9a0e1 | 172.31.92.216 | 2021-02-08 01:45:23 |
-+----+---------------------+---------------+---------------------+
 1 row in set (0.00 sec)
 
 MySQL [global]>
