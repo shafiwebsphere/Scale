@@ -52,12 +52,16 @@ Steps for encryption of the database password
 
 3.autoscaling.tf
     This file have 3 resources
+    
     a.launch_configuration
     b.autoscaling_group
     c.aws_security_group 
+    
       In launch configuration execute_db.sh  file included as user_data , in this script it will extract date , instance_id and private ip address
       second thing, it will copy a file from S3 bucket ,this file has insert statement  and values get replaced in the statement , and this values will get updated             in the table
+      
  Iamroles.tf
+ 
        To attach S3 readonly access to autoscaling , there are 4 resources availble in the file
        i. IAM_instance_profile
        ii.Role
